@@ -1,0 +1,24 @@
+body {
+  background-color: #bbbbbb;
+}
+
+p {
+  font-size: 20px;
+}
+
+.para-1 {
+  font-style: italic;
+}
+
+.para-2 {
+  font-weight: bold;
+}
+
+.para-3 {
+  color: green;
+  font-style: italic;
+  border: 1px 1px 1px #fff;
+  -webkit-box-shadow: 1px 1px 1px green;
+          box-shadow: 1px 1px 1px green;
+}
+/*# sourceMappingURL=main.css.map */

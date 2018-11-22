@@ -1,0 +1,23 @@
+@import "variables";
+@import "mixins";
+
+body{
+  background-color: $background-color;
+}
+
+p{
+  @include paragraph;
+}
+
+.para-1{
+  @include italic;
+}
+
+.para-2{
+  @include bold;
+}
+
+.para-3{
+  @include para-3(green);
+  @include box-shadow(1px 1px 1px #fff, 1px 1px 1px green);
+}
