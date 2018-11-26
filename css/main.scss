@@ -1,23 +1,26 @@
-@import "variables";
-@import "mixins";
+@import "partials/variables";
+@import "partials/mixins";
 
-body{
+@include google-font("Lato");
+
+body {
   background-color: $background-color;
 }
 
-p{
+p {
   @include paragraph;
+  font-family: $text-font;
 }
 
-.para-1{
+.para-1 {
   @include italic;
 }
 
-.para-2{
+.para-2 {
   @include bold;
 }
 
-.para-3{
+.para-3 {
   @include para-3(green);
   @include box-shadow(1px 1px 1px #fff, 1px 1px 1px green);
 }

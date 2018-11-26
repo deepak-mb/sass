@@ -1,0 +1,26 @@
+@mixin google-font($font){
+  $font: unquote($font);
+  @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+
+@mixin paragraph {
+  font-size: 20px;
+}
+
+@mixin bold {
+  font-weight: bold;
+}
+
+@mixin italic {
+  font-style: italic;
+}
+
+@mixin para-3($color: red, $font-style: italic) {
+  color: $color;
+  font-style: $font-style;
+}
+
+@mixin box-shadow($border: 3px solid black, $shadows...) {
+  border: $border;
+  box-shadow: $shadows;
+}
