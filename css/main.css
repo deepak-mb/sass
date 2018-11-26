@@ -8,6 +8,12 @@ p {
   font-family: "Lato";
 }
 
+@media only screen and (max-width: 920px) {
+  p {
+    text-align: center;
+  }
+}
+
 .para-1 {
   font-style: italic;
 }
