@@ -10,6 +10,9 @@ body {
 p {
   @include paragraph;
   font-family: $text-font;
+  @include large-screens{
+    text-align: center;
+  }
 }
 
 .para-1 {
