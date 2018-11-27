@@ -1,11 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 body {
   background-color: #bbbbbb;
 }
 
 p {
   font-size: 20px;
-  font-family: "Lato";
+  font-family: "Roboto";
 }
 
 .para-1 {
@@ -22,5 +22,35 @@ p {
   border: 1px 1px 1px #fff;
   -webkit-box-shadow: 1px 1px 1px green;
           box-shadow: 1px 1px 1px green;
+}
+
+.test-list-items li:nth-child(1) {
+  color: orange;
+}
+
+.test-list-items li:nth-child(1):hover {
+  color: #996300;
+}
+
+.test-list-items li:nth-child(2) {
+  color: red;
+}
+
+.test-list-items li:nth-child(2):hover {
+  color: #ff9999;
+}
+
+.test-list-items li:nth-child(3),
+.test-list-items li:nth-child(4),
+.test-list-items li:nth-child(5) {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.test-list-items li:nth-child(3):hover,
+.test-list-items li:nth-child(4):hover,
+.test-list-items li:nth-child(5):hover {
+  border-bottom: 2px solid black;
 }
 /*# sourceMappingURL=main.css.map */

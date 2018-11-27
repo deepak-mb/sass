@@ -1,7 +1,7 @@
 @import "partials/variables";
 @import "partials/mixins";
 
-@include google-font("Lato");
+@include google-font("Roboto");
 
 body {
   background-color: $background-color;
@@ -23,4 +23,36 @@ p {
 .para-3 {
   @include para-3(green);
   @include box-shadow(1px 1px 1px #fff, 1px 1px 1px green);
+}
+
+// Functions in Scss
+// Darken
+// Lighten
+// Transparentize
+// Opacify
+
+.test-list-items li:nth-child(1) {
+  color: $orange;
+
+  &:hover {
+    color: darken($orange, 20%);
+  }
+}
+
+.test-list-items li:nth-child(2) {
+  color: $red;
+  &:hover {
+    color: lighten($red, 30%);
+  }
+}
+
+.test-list-items li:nth-child(3),
+.test-list-items li:nth-child(4),
+.test-list-items li:nth-child(5){
+  border-bottom: 2px solid transparentize(#000000, 1);
+  transition: .5s ease;
+
+  &:hover{
+    border-bottom: 2px solid opacify(#000000, .5);
+  }
 }
