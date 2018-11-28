@@ -11,7 +11,7 @@ body {
 p {
   @include paragraph;
   font-family: $text-font;
-  @include large-screens{
+  @include large-screens {
     text-align: center;
   }
 }
@@ -52,11 +52,35 @@ p {
 
 .test-list-items li:nth-child(3),
 .test-list-items li:nth-child(4),
-.test-list-items li:nth-child(5){
+.test-list-items li:nth-child(5) {
   border-bottom: 2px solid transparentize(#000000, 1);
-  transition: .5s ease;
+  transition: 0.5s ease;
 
-  &:hover{
-    border-bottom: 2px solid opacify(#000000, .5);
+  &:hover {
+    border-bottom: 2px solid opacify(#000000, 0.5);
   }
+}
+
+.test-para-1 {
+  color: red;
+}
+
+.test-para-2 {
+  @extend .test-para-1;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.test-para-3 {
+  @extend .test-para-2;
+  font-weight: 700;
+}
+
+%highlight {
+  color: green;
+}
+
+.test-para-4{
+  @extend %highlight;
+  @extend .foo !optional;
 }

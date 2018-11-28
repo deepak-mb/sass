@@ -50,13 +50,30 @@ p {
 .test-list-items li:nth-child(4),
 .test-list-items li:nth-child(5) {
   border-bottom: 2px solid rgba(0, 0, 0, 0);
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .test-list-items li:nth-child(3):hover,
 .test-list-items li:nth-child(4):hover,
 .test-list-items li:nth-child(5):hover {
   border-bottom: 2px solid black;
+}
+
+.test-para-1, .test-para-2, .test-para-3 {
+  color: red;
+}
+
+.test-para-2, .test-para-3 {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.test-para-3 {
+  font-weight: 700;
+}
+
+.test-para-4 {
+  color: green;
 }
 /*# sourceMappingURL=main.css.map */
