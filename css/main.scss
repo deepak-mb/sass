@@ -80,7 +80,38 @@ p {
   color: green;
 }
 
-.test-para-4{
+.test-para-4 {
   @extend %highlight;
   @extend .foo !optional;
+}
+
+$contrast: low;
+.test-para-6 {
+  @if($contrast == low){
+    color: red;
+  } @else if($contrast == medium){
+    color: orange;
+  } @else{
+    color: green;
+  }
+}
+$contrast: medium;
+.test-para-7 {
+  @if($contrast == low){
+    color: red;
+  } @else if($contrast == medium){
+    color: orange;
+  } @else{
+    color: green;
+  }
+}
+$contrast: high;
+.test-para-8 {
+  @if($contrast == low){
+    color: red;
+  } @else if($contrast == medium){
+    color: orange;
+  } @else{
+    color: green; 
+  }
 }
